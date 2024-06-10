@@ -1,28 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
+import { RevenueCard } from './components/RevenueCard';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-    <div style= {{display: "flex", justifyContent: "center"}}>
-      <div style= {{backgroundColor: "red"}}>hi</div>
-      <div style= {{backgroundColor: "blue"}}>hi this</div>
-      <div style= {{backgroundColor: "yellowgreen"}}>hi Tavish</div>
-
-    </div>
-
-    <div className='flex justify-between'>
-    <div style= {{backgroundColor: "red"}}>hi</div>
-      <div style= {{backgroundColor: "blue"}}>hi this</div>
-      <div style= {{backgroundColor: "yellowgreen"}}>hi Tavish</div>
-
-      </div>
+      <RevenueCard title={"Amount pending"} amount={"92,312.20"} orderCount={13}/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
