@@ -2,18 +2,17 @@
 // function greet(firstName: string){
 //     console.log("Hello " + firstName);
 // }
-// function sum (a: number, b: number): number{
-//     return a + b;
-// }
-// const value = sum(2, 3);
-// console.log(value);
-function isLegal(age) {
-    if (age >= 18) {
-        return true;
-    }
-    else {
-        return false;
+var Direction;
+(function (Direction) {
+    Direction[Direction["up"] = 0] = "up";
+    Direction[Direction["down"] = 1] = "down";
+    Direction[Direction["left"] = 2] = "left";
+    Direction[Direction["right"] = 3] = "right";
+})(Direction || (Direction = {}));
+function doSomething(keyPressed) {
+    if (keyPressed === Direction.up) {
+        console.log("Moving Up");
     }
 }
-let legal = isLegal(20);
-console.log(legal);
+doSomething(Direction.up); // Moving Up
+doSomething(Direction.down); // Moving Down
