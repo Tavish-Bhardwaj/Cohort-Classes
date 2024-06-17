@@ -36,3 +36,12 @@ function doSomething(keyPressed: Direction){
 doSomething(Direction.up); // Moving Up
 doSomething(Direction.down); // Moving Down
 
+
+
+// Genric in typescript
+
+function identity<T>(arg: T): T{
+    return arg;
+}
+let output1= identity<string>("myString");
+let output2 = identity<number>(100);
