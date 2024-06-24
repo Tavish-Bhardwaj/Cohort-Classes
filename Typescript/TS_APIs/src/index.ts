@@ -32,3 +32,9 @@ type UserWithoutEmail = Exclude<User, 'email'>;
 // Type inferences in zod
 const A = z.string();
 type A = z.infer<typeof A>;
+
+
+// Docker
+// Docker Intro completed.
+// Docker Installation completed.   
+// Docker is a platform for developers and sysadmins to develop, deploy, and run applications with containers. The use of Linux containers to deploy applications is called containerization. Containers are not new, but their use for easily deploying applications is.
