@@ -42,3 +42,4 @@ type A = z.infer<typeof A>;
 //  but their use for easily deploying applications is.
 
 // Learning SQL Relationships and Joins
+// Building medium from scratch.
